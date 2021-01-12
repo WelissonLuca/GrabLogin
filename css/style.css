@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --primary-color: #4e5bee;
+  --secondary-color: #ff5757;
+  --gray-color: #f8f8f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.content {
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+}
+.content img {
+  width: 220px;
+}
+.form {
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  margin: 10px 0;
+  width: 250px;
+  padding: 10px 40px;
+  background: url(../assets/@.svg) no-repeat;
+  background-position: 10px;
+  border: 2px solid var(--gray-color);
+  border-radius: 10px;
+  outline: none;
+}
+.form input:nth-child(2) {
+  background: url(../assets/lock-24px.svg) no-repeat;
+  background-position: 10px;
+}
+
+.form button {
+  width: 250px;
+  padding: 10px 30px;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 18px;
+  background: var(--gray-color);
+  border: none;
+  border-radius: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/undraw_interview_rmcf.svg) no-repeat center / cover;
+}
