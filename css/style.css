@@ -35,6 +35,7 @@ body {
   margin: 10px 0;
   width: 250px;
   padding: 10px 40px;
+  color: #fff;
   background: url(../assets/@.svg) no-repeat;
   background-position: 10px;
   border: 2px solid var(--gray-color);
@@ -55,6 +56,11 @@ body {
   background: var(--gray-color);
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.form button:hover{
+  background: #dad6d6;
 }
 
 .image {
@@ -66,7 +72,37 @@ body {
     text-align: center;
 }
 .content div p,.content div a {
-font-size: 14px;
+font-size: clamp(12px,14px,16px);
 color: #FFFFFF;
 
+}
+@media(max-width:1024px){
+  
+  .content{
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    height: 100vh;
+   
+  }
+}
+@media(max-width:800px){
+  
+  .content{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    height: 100vh;
+   
+  }
+}
+@media(max-width:600px){
+  .image{
+    display: none;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+   
+  }
+  
 }
